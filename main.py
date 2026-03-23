@@ -19,7 +19,7 @@ def get_weather():
         "key": os.getenv("WEATHER_KEY")
     }
     res = requests.get(url, params=params).json()
-    if res["code"] != "200":
+    if res.get("code") != "200":
         return None
     now = res["now"]
     temp = now["temp"]
