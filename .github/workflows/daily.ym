@@ -1,4 +1,4 @@
-name: 每日天气推送
+name: 今日天气推送
 on:
   schedule:
     - cron: '0 0 * * *'  # 北京时间 8 点
